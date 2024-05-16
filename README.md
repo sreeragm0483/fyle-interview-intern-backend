@@ -56,3 +56,36 @@ pytest -vvv -s tests/
 # pytest --cov
 # open htmlcov/index.html
 ```
+
+
+
+### Run with Docker
+
+To run the server using Docker, follow these steps:
+
+
+Install [docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/)  on your machine
+
+1. Build the Docker image by running
+
+```bash
+    docker build -t fly-api . && docker run -p 5000:5000 fly-api
+```
+
+Check the API status using 
+```bash
+   curl http://localhost:7755
+```
+
+2. To start the server in development mode, you can run the following command:
+
+```bash
+   docker-compose up
+```
+
+Check the API status using 
+```bash
+   curl http://localhost:80
+```
+
+
