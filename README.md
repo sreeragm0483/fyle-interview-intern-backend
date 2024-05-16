@@ -69,7 +69,7 @@ Install [docker](https://docs.docker.com/engine/install/) and [docker-compose](h
 1. Build the Docker image by running
 
 ```bash
-    docker build -t fly-api . && docker run -p 5000:5000 fly-api
+    docker build -t fly-api . && docker run -p 7755:7755 fly-api
 ```
 
 Check the API status using 
